@@ -1,0 +1,267 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionID&StateMachine_1",
+        "strDownloadDirectory&StateMachine_1",
+        "boolIsSettingEnabled&StateMachine_1",
+        "boolIsWrongCredentials&StateMachine_1",
+        "strWorkItemID&StateMachine_1",
+        "elementBrowser&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "TransactionItem&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "ShouldStop&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "UserDirectory&Sequence_5",
+        "dt_SettingsAndConstants&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_Config",
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_DownloadDirectory"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_Processes&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_DownloadSetting",
+        "in_Config",
+        "in_KillProcessSheet",
+        "in_ConfigFile"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strUsername&Sequence_3",
+        "securePassword&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_ElementBrowser",
+        "out_WrongCredentials",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_WIID",
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strTaxId&Sequence_24"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_elementBrowser",
+        "out_DownloadSetting",
+        "in_DownloadDir",
+        "in_WorkItemId",
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_elementBrowser",
+        "in_DownloadDirectory",
+        "in_WrongCredentials",
+        "in_DownloadSetting",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueRetry&Sequence_8",
+        "ScreenshotPath&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_BusinessException",
+        "in_Config",
+        "in_TransactionItem",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "in_TransactionField1",
+        "in_TransactionID",
+        "in_SystemException",
+        "io_ConsecutiveSystemExceptions"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "System1/System1_Grouping_Downloaded_Data.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolNeedToWrite&Sequence_15",
+        "boolIsFileExists&Sequence_15",
+        "dt_DataReport&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TaxId",
+        "in_DownloadDir",
+        "in_Config",
+        "in_CurrentYear"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "System1/System1_Start_Download_Reports.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_elementBrowser",
+        "in_strTaxId",
+        "in_Config",
+        "in_DownloadDir",
+        "in_WorkItemId"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "System1/System1_Prepare_Download_Folder.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_strTaxId",
+        "in_WorkItemId",
+        "in_elementBrowser",
+        "out_DownloadSetting",
+        "in_DownloadDir",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "System1/System1_Upload_Yearly_Report.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strConfirmationId&Sequence_30"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_elementBrowser",
+        "in_strTaxId",
+        "in_Config",
+        "in_WorkItemId"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/RetryCurrentTransaction.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "in_SystemException",
+        "in_QueueRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/TakeScreenshot.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Screenshot&Sequence_2",
+        "ScreenshotFileInfo&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Folder",
+        "io_FilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "System1/System1_Update_Work_Item.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_elementBrowser",
+        "in_ConfirmationId",
+        "in_Config",
+        "in_WorkItemId"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/GetTransactionDataTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "TransactionNumber&Sequence_1",
+        "TransactionItem&Sequence_1",
+        "VerificationOutput&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
