@@ -170,8 +170,8 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
+        "in_TaxId",
         "in_elementBrowser",
-        "in_strTaxId",
         "in_Config",
         "in_DownloadDir",
         "in_WorkItemId"

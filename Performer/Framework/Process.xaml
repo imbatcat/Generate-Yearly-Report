@@ -11,7 +11,7 @@
     <InArgument x:TypeArguments="ui:UiElement" />
   </this:Process.in_elementBrowser>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>707.2,1496.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1011.2,1496.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -224,14 +224,11 @@
                 <OutArgument x:TypeArguments="x:String" />
               </CSharpValue.Result>in_WorkItemId</CSharpValue>
           </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_strTaxId">
-            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_147">
-              <CSharpValue.Result>
-                <OutArgument x:TypeArguments="x:String" />
-              </CSharpValue.Result>strTaxId</CSharpValue>
-          </InArgument>
           <InArgument x:TypeArguments="ui:UiElement" x:Key="in_elementBrowser">
             <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_160">in_elementBrowser</CSharpValue>
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_TaxId">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_161">strTaxId</CSharpValue>
           </InArgument>
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>

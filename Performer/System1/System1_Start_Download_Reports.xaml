@@ -3,8 +3,8 @@
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_DownloadDir" Type="InArgument(x:String)" />
     <x:Property Name="in_WorkItemId" Type="InArgument(x:String)" />
-    <x:Property Name="in_strTaxId" Type="InArgument(x:String)" />
     <x:Property Name="in_elementBrowser" Type="InArgument(ui:UiElement)" />
+    <x:Property Name="in_TaxId" Type="InArgument(x:String)" />
   </x:Members>
   <this:System1_Start_Download_Reports.in_elementBrowser>
     <InArgument x:TypeArguments="ui:UiElement" />
@@ -196,7 +196,7 @@
               </uix:NTypeInto.Target>
               <uix:NTypeInto.Text>
                 <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">in_strTaxId</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">in_TaxId</CSharpValue>
                 </InArgument>
               </uix:NTypeInto.Text>
               <uix:NTypeInto.VerifyOptions>
@@ -471,8 +471,8 @@
                         <InArgument x:TypeArguments="x:String" x:Key="in_CurrentYear">
                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_105">currentYear</CSharpValue>
                         </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="in_strTaxId">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_109">in_strTaxId</CSharpValue>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_TaxId">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_118">in_TaxId</CSharpValue>
                         </InArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                       <sap:WorkflowViewStateService.ViewState>
@@ -498,7 +498,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEach>
-            <ui:LogMessage DisplayName="Log Message - Finish downloading reports" sap:VirtualizedContainerService.HintSize="545.6,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_4">
+            <ui:LogMessage DisplayName="Log Message - Finish downloading reports" sap:VirtualizedContainerService.HintSize="644.8,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_4">
               <ui:LogMessage.Message>
                 <InArgument x:TypeArguments="x:Object">
                   <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_117">$"Finished downloading and merging reports for item {in_WorkItemId}"</CSharpValue>
